@@ -10,7 +10,7 @@ const FoodItem = (props) => {
 
   const history = useHistory();
 
-  const { categoryId, name, description, price, _id } = item;
+  const { categoryId, name, description, price, _id, image } = item;
 
   const category = categoryId
     ? categories.find((category) => category._id === categoryId)
@@ -36,6 +36,7 @@ const FoodItem = (props) => {
   return (
     <div className={classes.item}>
       <div className={classes.textContainer}>
+        <img src={image} style={{ width: 200, height: 100 }} />
         <p className={classes.text}>{name}</p>
         {description && <p className={classes.text}>{description}</p>}
         {price && <p className={classes.text}>${price}</p>}

@@ -70,6 +70,7 @@ const EditItem = (props) => {
       });
 
       const responseData = await response.json();
+      console.log(responseData);
       history.replace("/items");
     } catch (err) {
       console.log("err ", err);
