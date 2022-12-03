@@ -1,0 +1,2 @@
+please note that the project is missing .env file which contains the Uri connecting to mongodb,
+so make sure you provide one for the backend to work

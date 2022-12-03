@@ -1,0 +1,13 @@
+.pageContainer {
+  text-align: center;
+}
+
+.categoryTitle {
+  font: inherit;
+  font-size: 32px;
+}
+
+.itemsContainer {
+  display: flex;
+  justify-content: center;
+}
